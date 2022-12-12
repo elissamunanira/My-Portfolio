@@ -164,6 +164,10 @@ button[type="submit"]{
     font-size: xx-large;
     border-radius: 5px;
 }
+button[type="submit"]:hover{
+    color:#000;
+    background-color: #fff;
+}
 .footer{
     background-color: #000;
     color: #fff;
