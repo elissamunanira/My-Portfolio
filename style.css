@@ -28,7 +28,7 @@
     padding-top: 14px;
     padding-left: 45px;
 }
-.smenu{
+.menu{
     width: 500px;
     float: left;
     height:70px;
@@ -54,6 +54,10 @@ ul li a{
     font-family: Ariel;
     font-weight: bold;
     transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color:aqua;
 }
 .container{
     padding-top: 9%;
@@ -91,6 +95,7 @@ img{
 .about{
     height: 100Vh;
     color: #fff;
+    background-color: #000;
     font-size: x-large;
 }
 .about-text{
@@ -119,6 +124,7 @@ img{
     margin: 10%; 
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; 
     align-items: center; 
 }
 .service-card{
@@ -127,9 +133,10 @@ img{
     width: 250px;
     border-radius: 20px;
     margin-left: 15px;
+    margin-bottom: 35PX;
 }
-.service-image{
-    border-radius: 20px;
+.service-card-image{
+    border-radius: 20px 20px 0 0;
     width:250px;
     height: 160px;
 }
@@ -179,6 +186,94 @@ button[type="submit"]:hover{
 a{
     color: #fff;
 }
-a:hover{
-    color:aqua;
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media ( max-width: 925px ){
+
+    .navbar{
+        margin: auto;
+    }
+    .icon{
+        width: 100px;
+        float:left;
+        height: 40px;
+    }
+    .logo{
+        color: #fff;
+        font-size: 35px;
+        font-family: arial;
+        float: left;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    ul{
+        float: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 150px;
+    
+    }
+    ul li{
+        list-style:none;
+        margin-left:55px;
+        margin-top:27px;
+        font-size: 18px;
+    
+    }
+    .services{
+        height: 100vh;
+        /* background-color: #000; */
+        color: #fff;
+    }
+    .service{
+        font-size: 46px;
+    }
+
+    .service-text{
+        text-align: center;
+        font-size: larger;
+    }
+}
+@media ( max-width: 750px ){
+    .checkbtn{
+        display: block;
+        margin-right: 40px;
+    }
+    .navbar{
+        width: 100%;
+
+    }
+    .menu{
+        width: 100%;
+        background: #2c3e50;
+        display:fixed; 
+        height: 100vh;
+    }
+    ul{
+        position:fixed;
+        text-align: center;
+    }
+    ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~.menu{
+        left: 0;
+    }
 }
