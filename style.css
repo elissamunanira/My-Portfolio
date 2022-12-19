@@ -2,69 +2,62 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
-.main{
+ .main{
     width: 100%;
     background-color: #140F2D;
 }
 .home{
     height: 100vh;
 }
-.navbar{
-    width: 90%;
-    height: 75px;
-    margin: auto;
+nav{
+    position: fixed;
+    background-color: #14374a;
+    height: 80px;
+    width: 100%;
 }
-.icon{
-    width: 200px;
-    float:left;
-    height: 70px;
-}
-.logo{
+label.logo{
+    line-height: 80px;
     color: #fff;
-    font-size: 48px;
-    font-family: arial;
-    float: left;
-    padding-top: 14px;
-    padding-left: 45px;
-}
-.menu{
-    width: 500px;
-    float: left;
-    height:70px;
-}
-ul{
-    float: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 200px;
+    font-size: 45px;
+    font-weight: bold;
+    padding: 0 8%;
 
 }
-ul li{
-    list-style:none;
-    margin-left:90px;
-    margin-top:27px;
+nav ul{
+    float: right;
+    margin-right: 40px;
+    line-height: 80px;
+    display: block;
+
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+}
+nav ul li a{
+    color: #fff;
     font-size: 24px;
-
-}
-ul li a{
+    margin: 14px 27px;
+    text-transform: uppercase;
     text-decoration: none;
-    color: #fff;
     font-family: Ariel;
     font-weight: bold;
     transition: 0.4s ease-in-out;
 }
 
-ul li a:hover{
+a:hover{
     color:aqua;
 }
 .container{
-    padding-top: 9%;
+    padding: 15%;
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .text{
     color: #fff;
@@ -73,7 +66,7 @@ ul li a:hover{
 }
 .text1{
     font-size: 24px;
-    opacity: 80%;
+    /* opacity: 80%; */
 }
 .name{
     font-size: 32;
@@ -84,15 +77,17 @@ ul li a:hover{
 .text2{
     font-size: 24px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    opacity: 50%;
+    /* opacity: 50%; */
 }
 .image-container{
     border-radius: 50%;
+    padding-left: 120px;
 }
 img{
     border-radius: 50%;
 }
 .about{
+    position: static;
     height: 100Vh;
     color: #fff;
     background-color: #000;
@@ -101,7 +96,7 @@ img{
 .about-text{
     border-radius: 20px;
     background-color: #788475;
-    position: absolute;
+    position: static;
     margin: 10%;
     font-size: 32px;
 }
@@ -113,6 +108,8 @@ img{
 }
 .services{
     height: 100vh;
+    
+    margin-top: 80px;
     /* background-color: #000; */
     color: #fff;
 }
@@ -120,7 +117,7 @@ img{
     font-size: 56px;
 }
 .service-cards{
-    position: absolute;
+    position: static;
     margin: 10%; 
     display: flex;
     justify-content: space-between;
@@ -149,22 +146,22 @@ img{
     color: #fff;
 }
 form{
-    position: absolute;
+    position: static;
     margin: 10%;
 }
 input{
-    font-size: xx-large;
-    width: 1050px;
-}
-label{
-    font-size: x-large;
-}
-input[type="text"]{
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
     border-radius: 10px;
+    padding-left: 14px;
 }
-input[type="textarea"]{
+textarea{
     height: 150px;
+    width: 100%;
+    font-size: 14px;
     border-radius: 10px;
+    padding-left: 14px;
 }
 button[type="submit"]{
     color: #000;
@@ -172,8 +169,8 @@ button[type="submit"]{
     border-radius: 5px;
 }
 button[type="submit"]:hover{
-    color:#000;
-    background-color: #fff;
+    color:rgb(255, 255, 255);
+    background-color: rgb(72, 120, 232);
 }
 .footer{
     background-color: #000;
@@ -184,7 +181,8 @@ button[type="submit"]:hover{
     align-items: center;
 }
 a{
-    color: #fff;
+
+    color: rgb(255, 255, 255);
 }
 .checkbtn{
     font-size: 30px;
@@ -201,36 +199,15 @@ a{
 
 @media ( max-width: 925px ){
 
-    .navbar{
+    .nav{
         margin: auto;
     }
-    .icon{
-        width: 100px;
-        float:left;
-        height: 40px;
+    label.logo{
+        font-size: 30px;
     }
-    .logo{
-        color: #fff;
-        font-size: 35px;
-        font-family: arial;
-        float: left;
-        padding-top: 20px;
-        padding-left: 20px;
-    }
-    ul{
-        float: left;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 150px;
-    
-    }
-    ul li{
-        list-style:none;
-        margin-left:55px;
-        margin-top:27px;
-        font-size: 18px;
-    
+    nav ul li a{
+        font-size: 14px;
+        margin: 10px 20px;
     }
     .services{
         height: 100vh;
@@ -238,7 +215,7 @@ a{
         color: #fff;
     }
     .service{
-        font-size: 46px;
+        font-size: 40px;
     }
 
     .service-text{
@@ -251,29 +228,42 @@ a{
         display: block;
         margin-right: 40px;
     }
-    .navbar{
-        width: 100%;
 
-    }
-    .menu{
+   nav ul{
+        position: fixed;
         width: 100%;
-        background: #2c3e50;
-        display:fixed; 
         height: 100vh;
-    }
-    ul{
-        position:fixed;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
         text-align: center;
+        transition: all .5s;
     }
-    ul li{
+    nav ul li{
         display: block;
         margin: 50px 0;
-        line-height: 30px;
     }
-    ul li a{
+    nav ul li a{
         font-size: 20px;
     }
-    #check:checked ~.menu{
+    .services{
+        height: 160vh;
+        /* background-color: #000; */
+        color: #fff;
+        padding-left: 12%;
+    }
+    .home{
+        height: 120vh;
+    }
+    .about{
+        height: 120vh;
+    }
+    a:hover{
+        background: none;
+        color: #0082e5;
+    }
+    #check:checked ~ ul{
         left: 0;
     }
+
 }
