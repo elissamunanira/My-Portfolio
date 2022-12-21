@@ -206,18 +206,136 @@ a{
         font-size: 14px;
         margin: 10px 20px;
     }
+    .container{
+        padding: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        
+    }
+    .text{
+        color: #fff;
+        font-size: xx-large;
+    }
+    .text1{
+        font-size: 24px;
+        /* opacity: 80%; */
+    }
+    .name{
+        font-size: 32;
+        font-weight: bold;
+        line-height: 1;
+    }
+    
+    .text2{
+        font-size: 24px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /* opacity: 50%; */
+    }
+    img{
+        border-radius: 50%;
+    }
+    .about{
+        position: static;
+        height: 100Vh;
+        color: #fff;
+        background-color: #000;
+        font-size: large;
+    }
+    .about-text{
+        border-radius: 20px;
+        background-color: #788475;
+        position: static;
+        margin: 10%;
+        font-size: 32px;
+    }
+    .abt{
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
     .services{
-        height: 100vh;
+        height: 140vh;
+        
+        margin-top: 80px;
         /* background-color: #000; */
         color: #fff;
     }
     .service{
-        font-size: 40px;
+        font-size: 36px;
     }
-
+    .service-cards{
+        position: static;
+        margin: 10%; 
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+        align-items: center; 
+    }
+    .service-card{
+        background-color: #788475;
+        height:200px;
+        width: 250px;
+        border-radius: 20px;
+        margin-left: 15px;
+        margin-bottom: 35PX;
+    }
+    .service-card-image{
+        border-radius: 20px 20px 0 0;
+        width:250px;
+        height: 160px;
+    }
     .service-text{
         text-align: center;
         font-size: larger;
+    }
+    .contact{
+        height: 100vh;
+        color: #fff;
+    }
+    form{
+        position: static;
+        margin: 10%;
+    }
+    input{
+        width: 80%;
+        height: 40px;
+        font-size: 14px;
+        border-radius: 10px;
+        padding-left: 14px;
+    }
+    textarea{
+        height: 150px;
+        width: 80%;
+        font-size: 14px;
+        border-radius: 10px;
+        padding-left: 14px;
+    }
+    span{
+        color: red;
+    }
+    button[type="submit"]{
+        color: #000;
+        font-size: xx-large;
+        border-radius: 5px;
+    }
+    button[type="submit"]:hover{
+        color:rgb(255, 255, 255);
+        background-color: rgb(72, 120, 232);
+    }
+    .footer{
+        background-color: #000;
+        color: #fff;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    a{
+    
+        color: rgb(255, 255, 255);
     }
 }
 @media ( max-width: 663px ){
