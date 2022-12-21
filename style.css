@@ -251,7 +251,7 @@ a{
     }
 
     .container{
-        padding: 8%;
+        padding: 15%;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -282,7 +282,7 @@ a{
     }
     .about{
         position: static;
-        height: 120Vh;
+        height: 80Vh;
         color: #fff;
         background-color: #000;
         font-size: x-large;
