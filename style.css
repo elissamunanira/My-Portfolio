@@ -251,7 +251,7 @@ a{
     }
 
     .container{
-        padding: 15%;
+        padding: 10%;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -303,12 +303,12 @@ a{
     .services{
         height: 170vh;
         
-        margin: 80px;
+        margin: 20px;
         /* background-color: #000; */
         color: #fff;
     }
     .service{
-        font-size: 56px;
+        font-size: 36px;
     }
     .service-cards{
         position: static;
