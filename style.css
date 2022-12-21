@@ -283,10 +283,10 @@ a{
     }
     .about{
         position: static;
-        height: 80Vh;
+        height: 60Vh;
         color: #fff;
         background-color: #000;
-        font-size: x-large;
+        font-size: 36px;
     }
     .about-text{
         border-radius: 20px;
@@ -304,7 +304,7 @@ a{
     .services{
         height: 170vh;
         
-        margin: 20px;
+        margin: 18px;
         /* background-color: #000; */
         color: #fff;
     }
