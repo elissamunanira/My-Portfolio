@@ -249,21 +249,9 @@ a{
     .about{
         height: 120vh;
     }
-    .container{
-        padding: 15%;
-        width: 100%;
-        margin-left: 10%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        
-    }
-
-
 
     .container{
-        padding: 10%;
+        padding: 8%;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -303,8 +291,8 @@ a{
         border-radius: 20px;
         background-color: #788475;
         position: static;
-        margin: 10%;
-        font-size: 32px;
+        margin: 8%;
+        font-size: 14px;
     }
     .abt{
         margin-left: 15px;
