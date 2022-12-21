@@ -206,6 +206,9 @@ a{
         font-size: 14px;
         margin: 10px 20px;
     }
+    .home{
+        height: 120vh;
+    }
     .container{
         padding: 10%;
         width: 100%;
@@ -238,7 +241,7 @@ a{
     }
     .about{
         position: static;
-        height: 100Vh;
+        height: 140Vh;
         color: #fff;
         background-color: #000;
         font-size: large;
@@ -257,7 +260,7 @@ a{
         margin-bottom: 15px;
     }
     .services{
-        height: 140vh;
+        height: 160vh;
         
         margin-top: 80px;
         /* background-color: #000; */
@@ -292,7 +295,7 @@ a{
         font-size: larger;
     }
     .contact{
-        height: 100vh;
+        height: 120vh;
         color: #fff;
     }
     form{
@@ -328,7 +331,7 @@ a{
     .footer{
         background-color: #000;
         color: #fff;
-        font-size: 50px;
+        font-size: 36px;
         display: flex;
         justify-content: center;
         align-items: center;
