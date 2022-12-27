@@ -11,6 +11,7 @@
 .home{
     height: 100vh;
     width: 100%;
+    padding-top: 80px;
 }
 nav{
     position: fixed;
@@ -90,7 +91,7 @@ img{
     font-size: x-large;
 }
 .about-title{
-    padding-top: 80px;
+    padding-top: 100px;
 }
 .about-text{
     border-radius: 20px;
@@ -143,7 +144,6 @@ img{
 .contact{
     height: 100vh;
     color: #fff;
-    padding-top: 80px;
 }
 form{
     position: static;
@@ -259,7 +259,7 @@ a{
         font-size: large;
     }
     .about-title{
-        padding-top: 80px;
+        padding-top: 100px;
     }
     .about-text{
         border-radius: 20px;
@@ -277,7 +277,7 @@ a{
     .services{
         height: 100vh;
         
-        padding-top: 80px;
+        padding-top: 40px;
         /* background-color: #000; */
         color: #fff;
     }
@@ -310,7 +310,7 @@ a{
         font-size: larger;
     }
     .contact{
-        height: 80vh;
+        height: 110vh;
         color: #fff;
     }
     form{
@@ -387,7 +387,7 @@ a{
         font-size: 20px;
     }
     .home{
-        height: 120vh;
+        height: 130vh;
     }
     .about{
         height: 120vh;
@@ -426,7 +426,7 @@ a{
     }
     .about{
         position: static;
-        height: 60Vh;
+        height: 80Vh;
         color: #fff;
         background-color: #000;
         font-size: large;
@@ -439,7 +439,7 @@ a{
         background-color: #788475;
         position: static;
         margin: 8%;
-        font-size: 14px;
+        font-size: 18px;
     }
     .abt{
         margin-left: 15px;
@@ -448,7 +448,7 @@ a{
         margin-bottom: 15px;
     }
     .services{
-        height: 170vh;
+        height: 180vh;
         
         margin: 10px;
         /* background-color: #000; */
@@ -483,7 +483,7 @@ a{
         font-size: larger;
     }
     .contact{
-        height: 80vh;
+        height: 110vh;
         color: #fff;
     }
     form{
