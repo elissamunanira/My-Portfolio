@@ -13,6 +13,8 @@
     width: 100%;
 }
 nav{
+    position: fixed;
+    background-color: #140F2D;
     height: 80px;
     width: 100%;
 }
@@ -87,6 +89,9 @@ img{
     background-color: #000;
     font-size: x-large;
 }
+.about-title{
+    padding-top: 80px;
+}
 .about-text{
     border-radius: 20px;
     background-color: #788475;
@@ -103,11 +108,11 @@ img{
 .services{
     height: 100vh;
     
-    margin-top: 80px;
     /* background-color: #000; */
     color: #fff;
 }
-.service{
+.service{ 
+    padding-top: 80px;
     font-size: 56px;
 }
 .service-cards{
@@ -138,6 +143,7 @@ img{
 .contact{
     height: 100vh;
     color: #fff;
+    padding-top: 80px;
 }
 form{
     position: static;
@@ -202,6 +208,7 @@ a{
 
     .nav{
         margin: auto;
+        position: fixed;
     }
     label.logo{
         font-size: 30px;
@@ -211,6 +218,7 @@ a{
         margin: 10px 20px;
     }
     .home{
+        padding-top: 80px;
         height: 100vh;
     }
     .container{
@@ -250,6 +258,9 @@ a{
         background-color: #000;
         font-size: large;
     }
+    .about-title{
+        padding-top: 80px;
+    }
     .about-text{
         border-radius: 20px;
         background-color: #788475;
@@ -266,7 +277,7 @@ a{
     .services{
         height: 100vh;
         
-        margin-top: 80px;
+        padding-top: 80px;
         /* background-color: #000; */
         color: #fff;
     }
@@ -356,6 +367,7 @@ a{
     }
     nav{
         background: #2c3e50;
+        position: fixed;
     }
    nav ul{
         position: fixed;
@@ -418,6 +430,9 @@ a{
         color: #fff;
         background-color: #000;
         font-size: large;
+    }
+    .about-title{
+        padding-top: 80px;
     }
     .about-text{
         border-radius: 20px;
