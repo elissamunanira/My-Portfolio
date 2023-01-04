@@ -22,32 +22,22 @@
 
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 
-
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <title>Elissa Munanira</title>
-</head>
-<body>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>webpage design</title>
-        <link rel="stylesheet"href="css.css">
-    </head>
+ </head>
     <body>
         <div class="main">
-            <nav>
+            <nav id="mainNav">
                 <input type="checkbox"id="check">
                 <label for="check"class="checkbtn">
                     <i class="fas fa-bars"></i>
                 </label>
                 <label class="logo">EM</label>
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#service">SERVICE</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a class="nav-link" href="">HOME</a></li>
+                    <li><a class="nav-link" href="#about">ABOUT</a></li>
+                    <li><a class="nav-link" href="#service">SERVICE</a></li>
+                    <li><a class="nav-link" href="#contact">CONTACT</a></li>
                 </ul>  
             </nav>
             <div class="home">
@@ -59,7 +49,7 @@
                     <p class="text2"><i>full stack developer</i></p>
                 </div>
                     <div class="image-container">
-                        <img src="images/me.png" alt="">
+                        <img class="my-image"src="images/me.png" alt="">
                     </div>
             </div>
             </div>
@@ -93,20 +83,22 @@
                 </div>
             </div>
             <div class="contact"id="contact">
-                <center><h1 style="padding-top: 100px">CONTACT ME</h1></center>
+                <div class="contact-image"><img src="images/contact3.jpg" alt=""></div>
+                
                 <form action="">
+                    <!-- <i class="fas fa-paper-plane"></i>  -->
                     <div class="name">
-                        <label for="name">Full Name</label><br>
+                        <label for="name">Full Name</label>
                         <input type="text" placeholder="Enter Names" id="contact-name" onkeyup="validateName()">
                         <span id="name-error"></span>
                      </div>
                      <div class="email">
-                        <label for="name">Email</label><br>
+                        <label for="name">Email</label>
                         <input type="text" placeholder="Enter Email"id="contact-email" onkeyup="validateEmail()">
                         <span id="email-error"></span>
                     </div>
                     <div class="message">
-                        <label for="name">Message</label><br>
+                        <label for="name">Message</label>
                         <textarea placeholder="Enter message"id="contact-message" onkeyup="validateMessage()"></textarea>
                         <span id="message-error"></span>
                         <br><br>
@@ -117,18 +109,49 @@
                     </div>
                 </form>
             </div>
-            <div class="footer">
-                <footer>
-                    <center><h3>Follow me</h3></center>
-                    <a href="https://www.facebook.com/elissa.munanira"><i class="fa-brands fa-facebook"></i></a>                   
-                    <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>                 
-                    <a href="https://www.instagram.com/elissa_munanira/"><i class="fa-brands fa-instagram"></i></a>                  
-                    <a href="https://twitter.com/elissamunanira"><i class="fa-brands fa-twitter"></i></a>                 
-                    <a href="https://github.com/elissamunanira"><i class="fa-brands fa-github"></i></a> 
-                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+            <footer class="footer" >
+                <div class="container1">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Elissa</h4>
+                            <ul>
+                                <li><a href="#about">About Me</a></li>
+                                <li><a href="#service">Services</a></li>
+                                <li><a href="">Experiences</a></li>
+                                <li><a href="">Background</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>get help</h4>
+                            <ul>
+                                <li><a href="">FAQ</a></li>
+                                <li><a href="">shipping</a></li>
+                                <li><a href="">buying online</a></li>
+                                <li><a href="">payment option</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>our services</h4>
+                            <ul>
+                                <li><a href="">Photography</a></li>
+                                <li><a href="">WebDesign</a></li>
+                                <li><a href="">graphic design</a></li>
+                                <li><a href="">online marketing</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Follow me</h4>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/elissa.munanira"><i class="fa-brands fa-facebook"></i></a>               
+                                <a href="https://www.instagram.com/elissa_munanira/"><i class="fa-brands fa-instagram"></i></a>                  
+                                <a href="https://twitter.com/elissamunanira"><i class="fa-brands fa-twitter"></i></a>                 
+                                <a href="https://github.com/elissamunanira"><i class="fa-brands fa-github"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
                     
-                </footer>
-            </div>
+            </footer>
         </div>
         <script src="index.js"></script>
     </body>

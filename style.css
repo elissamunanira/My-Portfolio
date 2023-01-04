@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: auto;
     padding: 0;
     list-style: none;
 }
@@ -15,7 +15,7 @@
 }
 nav{
     position: fixed;
-    background-color: #140F2D;
+    background-color: #24262b;
     height: 80px;
     width: 100%;
 }
@@ -41,8 +41,8 @@ nav ul li{
 }
 nav ul li a{
     color: #fff;
-    font-size: 24px;
-    margin: 14px 27px;
+    font-size: 18px;
+    margin: 14px 42px;
     text-transform: uppercase;
     text-decoration: none;
     font-family: Ariel;
@@ -80,14 +80,14 @@ a:hover{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* opacity: 50%; */
 }
-img{
+.my-image{
     border-radius: 50%;
 }
 .about{
     position: static;
     height: 100Vh;
     color: #fff;
-    background-color: #000;
+    background-color: #24262b;
     font-size: x-large;
 }
 .about-title{
@@ -142,26 +142,60 @@ img{
     font-size: larger;
 }
 .contact{
-    height: 100vh;
-    color: #fff;
+width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: url("images/contact3.jpg") no-repeat center center;
 }
-form{
+.contact-image{
+    display :none;
+}
+.contact form{
+    width: 90%;
+    max-width: 500px;
+    padding: 50px 30px 20px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     position: static;
-    margin: 10%;
+}
+.fa-paper-plane{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    font-size: 26px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
 }
 input{
     width: 100%;
-    height: 40px;
-    font-size: 14px;
-    border-radius: 10px;
-    padding-left: 14px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: static;
 }
-textarea{
-    height: 150px;
-    width: 100%;
+input label{
+    flex-basis: 28%;
+}
+input,textarea{
+    flex-basis: 68%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    color: #333;
+    font-size: 16px;
+    width: 90%;
+}
+::placeholder{
     font-size: 14px;
-    border-radius: 10px;
-    padding-left: 14px;
 }
 span{
     color: red;
@@ -171,25 +205,89 @@ span i{
     color: seagreen;
 }
 button[type="submit"]{
-    color: #000;
-    font-size: xx-large;
-    border-radius: 5px;
+    background: #140F2D;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
 }
 button[type="submit"]:hover{
     color:rgb(255, 255, 255);
     background-color: rgb(72, 120, 232);
 }
-.footer{
-    background-color: #000;
-    color: #fff;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container1{
+    max-width: 1170px;
+    margin: auto;
 }
-a{
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+    width:25%;
+    padding: 0 15px;
+}
+.footer h4{
+    font-size: 18px;
+    color: #ffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
 
-    color: rgb(255, 255, 255);
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffff;
 }
 .checkbtn{
     font-size: 30px;
@@ -204,9 +302,12 @@ a{
     display: none;
 }
 
+
+
 @media ( max-width: 925px ){
 
     .nav{
+        background-color: #24262b;
         margin: auto;
         position: fixed;
     }
@@ -248,7 +349,7 @@ a{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         /* opacity: 50%; */
     }
-    img{
+    my-image{
         border-radius: 50%;
     }
     .about{
@@ -310,54 +411,86 @@ a{
         font-size: larger;
     }
     .contact{
-        height: 110vh;
-        color: #fff;
-    }
-    form{
-        position: static;
-        margin: 10%;
-    }
-    input{
         width: 100%;
-        height: 40px;
-        font-size: 14px;
-        border-radius: 10px;
-        padding-left: 14px;
-    }
-    textarea{
-        height: 150px;
-        width: 100%;
-        font-size: 14px;
-        border-radius: 10px;
-        padding-left: 14px;
-    }
-    span{
-        color: red;
-        font-size: 14px;
-    }
-    span i{
-        color: seagreen;
-    }
-    button[type="submit"]{
-        color: #000;
-        font-size: xx-large;
-        border-radius: 5px;
-    }
-    button[type="submit"]:hover{
-        color:rgb(255, 255, 255);
-        background-color: rgb(72, 120, 232);
-    }
-    .footer{
-        background-color: #000;
-        color: #fff;
-        font-size: 36px;
+        height: 100vh;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        background: #140F2D;
     }
-    a{
-    
-        color: rgb(255, 255, 255);
+        .contact-image{
+            display :none;
+        }
+        .contact form{
+            width: 90%;
+            max-width: 500px;
+            padding: 50px 30px 20px;
+            background: #fff;
+            border-radius: 4px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            position: static;
+        }
+        .fa-paper-plane{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            font-size: 26px;
+            padding: 20px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            
+        }
+        input{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            position: static;
+        }
+        input label{
+            flex-basis: 28%;
+        }
+        input,textarea{
+            flex-basis: 68%;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #999;
+            color: #333;
+            font-size: 16px;
+            width: 90%;
+        }
+        ::placeholder{
+            font-size: 14px;
+        }
+        span{
+            color: red;
+            font-size: 14px;
+        }
+        span i{
+            color: seagreen;
+        }
+        button[type="submit"]{
+            background: #140F2D;
+            color: #fff;
+            border-radius: 4px;
+            border: 1px solid rgba(255,255,255,0.7);
+            padding: 10px 40px;
+            outline: 0;
+            cursor: pointer;
+            display: block;
+            margin: 30px auto 10px;
+        }
+        button[type="submit"]:hover{
+            color:rgb(255, 255, 255);
+            background-color: rgb(72, 120, 232);
+        }
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
     }
 }
 @media ( max-width: 663px ){
@@ -370,7 +503,7 @@ a{
         position: fixed;
     }
    nav ul{
-        position: fixed;
+        position: absolute;
         width: 100%;
         height: 100vh;
         background: #2c3e50;
@@ -421,7 +554,7 @@ a{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         /* opacity: 50%; */
     }
-    img{
+    my-image{
         border-radius: 50%;
     }
     .about{
@@ -483,64 +616,102 @@ a{
         font-size: larger;
     }
     .contact{
-        height: 110vh;
-        color: #fff;
-    }
-    form{
-        position: static;
-        margin: 10%;
-    }
-    input{
         width: 100%;
-        height: 40px;
-        font-size: 14px;
-        border-radius: 10px;
-        padding-left: 14px;
-    }
-    textarea{
-        height: 150px;
-        width: 100%;
-        font-size: 14px;
-        border-radius: 10px;
-        padding-left: 14px;
-    }
-    button[type="submit"]{
-        color: #000;
-        font-size: xx-large;
-        border-radius: 5px;
-    }
-    button[type="submit"]:hover{
-        color:rgb(255, 255, 255);
-        background-color: rgb(72, 120, 232);
-    }
-    span{
-        color: red;
-        font-size: 14px;
-    }
-    span i{
-        color: seagreen;
-    }
-    .footer{
-        background-color: #000;
-        color: #fff;
-        font-size: 50px;
+        height: 100vh;
         display: flex;
-        justify-content: center;
         align-items: center;
-    }
-    a{
-    
-        color: rgb(255, 255, 255);
-    }
-    .footer{
-        background-color: #000;
-        color: #fff;
-        font-size: 20px;
-        display: flex;
         justify-content: center;
-        align-items: center;
+        background: #140F2D;
     }
+        .contact-image{
+            display :none;
+        }
+        .contact form{
+            width: 90%;
+            max-width: 500px;
+            padding: 50px 30px 20px;
+            background: #fff;
+            border-radius: 4px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            position: static;
+        }
+        .fa-paper-plane{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            font-size: 26px;
+            padding: 20px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            
+        }
+        input{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            position: static;
+        }
+        input label{
+            flex-basis: 28%;
+        }
+        input,textarea{
+            flex-basis: 68%;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #999;
+            color: #333;
+            font-size: 16px;
+            width: 90%;
+        }
+        ::placeholder{
+            font-size: 14px;
+        }
+        span{
+            color: red;
+            font-size: 14px;
+        }
+        span i{
+            color: seagreen;
+        }
+        button[type="submit"]{
+            background: #140F2D;
+            color: #fff;
+            border-radius: 4px;
+            border: 1px solid rgba(255,255,255,0.7);
+            padding: 10px 40px;
+            outline: 0;
+            cursor: pointer;
+            display: block;
+            margin: 30px auto 10px;
+        }
+        button[type="submit"]:hover{
+            color:rgb(255, 255, 255);
+            background-color: rgb(72, 120, 232);
+        }
+.footer-col{
+    width: 100%;
+}
+.footer h4{
+    font-size: 18px;
+    color: #ffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+}
+.footer h4::before{
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+}
 
+    nav ul.show{
+        left:0px;
+    }
 
     #check:checked ~ ul{
         left: 0;
