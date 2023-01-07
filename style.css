@@ -432,7 +432,7 @@ ul{
         position: static;
         height: 150Vh;
         color: #fff;
-        background-color: #000;
+        background-color: #24262b;
         font-size: large;
     }
     .about-title{
@@ -675,9 +675,6 @@ ul{
     .home{
         height: 130vh;
     }
-    .about{
-        height: 120vh;
-    }
 
     .container{
         padding: 10%;
@@ -714,7 +711,7 @@ ul{
         position: static;
         height: 130Vh;
         color: #fff;
-        background-color: #000;
+        background-color: #24262b;
         font-size: large;
     }
     .about-title{
