@@ -21,11 +21,11 @@ root{
 nav{
     position: fixed;
     background-color: #24262b;
-    height: 80px;
+    height: 60px;
     width: 100%;
 }
 label.logo{
-    line-height: 80px;
+    line-height: 60px;
     color: #fff;
     font-size: 45px;
     font-weight: bold;
@@ -35,14 +35,14 @@ label.logo{
 nav ul{
     float: right;
     margin-right: 40px;
-    line-height: 80px;
+    line-height: 60px;
     display: block;
 
 
 }
 nav ul li{
     display: inline-block;
-    line-height: 80px;
+    line-height: 60px;
 }
 nav ul li a{
     color: #fff;
@@ -56,7 +56,7 @@ nav ul li a{
 }
 
 a:hover{
-    color:aqua;
+    color:rgb(43, 145, 208);
 }
 
 
@@ -142,7 +142,7 @@ a:hover{
     margin: 20% 0% 20% 20%;
 }
 .cv:hover{
-    background: aqua;
+    background:  rgb(43, 145, 208);
     transition: all 0.3s ease;
     border-style: none;
 }
@@ -604,7 +604,7 @@ ul{
         }
         button[type="submit"]:hover{
             color:rgb(255, 255, 255);
-            background-color: rgb(72, 120, 232);
+            background-color: rgb(43, 145, 208);
         }
     .footer-col{
         width: 50%;
@@ -643,11 +643,10 @@ ul{
         max-width: 1170px;
         margin: 0 auto;
         background: #2c3e50;
-        z-index: 2;
+         
       }
       .nav-header {
         display: block;
-        padding: 1rem 2rem;
         
       }
       .nav-toggle {
@@ -663,16 +662,19 @@ ul{
       }
       .nav-link {
         display: block;
+        width: 100vw;
         padding: 1rem 2rem;
         text-transform: capitalize;
         letter-spacing: 0.25rem;
         transition: all 0.3s linear;;
         color: #fff;
+        align-items: center;
+        text-align: center;
         cursor: pointer;
-        font-size: 1rem;
+        font-size: 1.5rem;
       }
       .nav-link:hover {
-        color: aqua;
+        color: rgb(43, 145, 208);
         padding-left: 2.25rem;
       }
       /* 280px */
@@ -875,7 +877,7 @@ ul{
         }
         button[type="submit"]:hover{
             color:rgb(255, 255, 255);
-            background-color: rgb(72, 120, 232);
+            background-color: rgb(43, 145, 208);
         }
 .footer-col{
     width: 100%;
