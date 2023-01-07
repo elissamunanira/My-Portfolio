@@ -1,8 +1,3 @@
-root{
-    --transition: all 0.3s linear;
-    --spacing: 0.25rem;
-    --radius: 0.5rem;
-}
 *{
     box-sizing: border-box;
     margin: auto;
@@ -23,6 +18,7 @@ nav{
     background-color: #24262b;
     height: 60px;
     width: 100%;
+    z-index: 5;
 }
 label.logo{
     line-height: 60px;
@@ -223,6 +219,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 background: url("images/contact3.jpg") no-repeat center center;
+z-index: 4;
 }
 .contact-image{
     display :none;
@@ -369,7 +366,7 @@ ul{
     text-transform: capitalize;
     letter-spacing: 0.25rem;
     color: #fff;
-    padding: 30px 35%;
+    padding: 30px 25%;
   }
 .nav-toggle{
     font-size: 30px;
@@ -616,27 +613,7 @@ ul{
         display: block;
         margin-right: 35px;
     }
-    /* nav{
-        background: #2c3e50;
-        position: fixed;
-    }
-   nav ul{
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-    }
-    nav ul li a{
-        font-size: 20px;
-    } */
+    
 
     .nav-center {
         position: fixed;
@@ -900,13 +877,10 @@ ul{
 }
 .copyright {
     text-transform: capitalize;
-    letter-spacing: var(--spacing);
+    letter-spacing: 0.1rem;
     color: #fff;
     padding: 20px 3%;
   }
 
-    nav ul.show{
-        left:0px;
-    }
 
 }
