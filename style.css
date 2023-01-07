@@ -611,7 +611,7 @@ ul{
         margin-bottom: 30px;
     }
 }
-@media ( max-width: 663px ){
+@media ( max-width: 667px ){
     .nav-toggle{
         display: block;
         margin-right: 35px;
@@ -639,6 +639,7 @@ ul{
     } */
 
     .nav-center {
+        position: fixed;
         width: 100%;
         max-width: 1170px;
         margin: 0 auto;
@@ -662,7 +663,7 @@ ul{
       }
       .nav-link {
         display: block;
-        width: 100vw;
+        width: 80vw;
         padding: 1rem 2rem;
         text-transform: capitalize;
         letter-spacing: 0.25rem;
