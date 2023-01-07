@@ -143,6 +143,10 @@ nav ul li{
     transition: all 0.3s ease;
     border-style: none;
 }
+a{
+    text-decoration: none;
+    color: #fff;
+}
 /*  end of cv and view more buttons */
 
 .about-t-b{
