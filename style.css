@@ -48,7 +48,7 @@ nav ul li{
     text-decoration: none;
     font-family: Ariel;
     font-weight: bold;
-    transition: 0.4s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 .nav-link:hover{
@@ -98,7 +98,7 @@ nav ul li{
     font-size: x-large;
 }
 .about-title{
-    padding-top: 40px;
+    padding-top: 10px;
 }
 .about-text{
     border-radius: 20px;
@@ -639,7 +639,7 @@ ul{
         width: 100%;
         max-width: 1170px;
         margin: 0 auto;
-        background: #2c3e50;
+        background: #24262b;
          
       }
       .nav-header {
@@ -686,7 +686,7 @@ ul{
         display: block;
         height: 100vh;
         width: 100%;
-        background: #2c3e50;
+        background: #24262b;
       }
 
 
@@ -764,7 +764,7 @@ ul{
         font-size:large ;
     }
     .about-images{
-        max-width: 80%;
+        max-width: 90%;
     }
     .single-icon{
         height: 40px;
