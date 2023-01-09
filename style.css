@@ -170,7 +170,7 @@ a{
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    max-width: 40%;
+    max-width: 60%;
     height: 10vh;
 }
 .single-icon{
@@ -237,7 +237,7 @@ form{
     border-radius: 4px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     position: relative;
-    opacity: 95%;
+    opacity: 90%;
 }
 .fa-paper-plane{
     position: absolute;
@@ -276,7 +276,7 @@ input,textarea{
     font-size: 14px;
 }
 span{
-    color: red;
+    color: #e91e63;
     font-size: 14px;
 }
 span i{
@@ -496,6 +496,17 @@ ul{
         border-style: none;
         margin: 2% 0% 2% 2%;
     }
+    .myskills{
+        font-size:large ;
+    }
+    .about-images{
+        max-width: 70%;
+    }
+    .single-icon{
+        height: 40px;
+        width: 40px;
+        border-radius: 10px;
+    }
     .services{
         height: 120vh;
         
@@ -613,6 +624,9 @@ ul{
         margin-bottom: 30px;
     }
 }
+
+
+
 @media ( max-width: 667px ){
     .nav-toggle{
         display: block;
@@ -745,6 +759,17 @@ ul{
         font-weight: bold;
         border-style: none;
         margin: 2% 0% 2% 2%;
+    }
+    .myskills{
+        font-size:large ;
+    }
+    .about-images{
+        max-width: 80%;
+    }
+    .single-icon{
+        height: 40px;
+        width: 40px;
+        border-radius: 10px;
     }
     .services{
         height: 180vh;
