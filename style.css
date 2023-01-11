@@ -7,6 +7,7 @@
  .main{
     width: 100%;
     background-color: #140F2D;
+
 }
 .home{
     height: 100vh;
@@ -52,7 +53,7 @@ nav ul li{
 }
 
 .nav-link:hover{
-    color:rgb(43, 145, 208);
+    color:#02A9EA;
     transition: all 0.5s ease;
 }
 
@@ -139,7 +140,7 @@ nav ul li{
     margin: 20% 0% 20% 20%;
 }
 .cv:hover{
-    background:  rgb(43, 145, 208);
+    background: #02A9EA;
     transition: all 0.3s ease;
     border-style: none;
 }
@@ -223,7 +224,7 @@ height: 100vh;
 display: flex;
 align-items: center;
 justify-content: center;
-background: url("images/contact3.jpg") no-repeat center center;
+background: url("images/contact-me.jpg") no-repeat center center;
 z-index: 4;
 }
 .contact-image{
@@ -292,10 +293,12 @@ button[type="submit"]{
     cursor: pointer;
     display: block;
     margin: 30px auto 10px;
+    font-size: large;
+    text-transform: uppercase;
 }
 button[type="submit"]:hover{
     color:rgb(255, 255, 255);
-    background-color: rgb(72, 120, 232);
+    background-color: #02A9EA;
 }
 .container1{
     max-width: 1170px;
@@ -309,7 +312,7 @@ ul{
     list-style: none;
 }
 .footer{
-    height: 60vh;
+    height: 40vh;
     background-color: #24262b;
     padding: 30px 0px 0px 0px;
 }
@@ -545,7 +548,7 @@ ul{
         display: flex;
         align-items: center;
         justify-content: center;
-        background: url("images/contact3.jpg") no-repeat center center;
+        background: url("images/contact-me.jpg") no-repeat center center;
         z-index: 4;
         }
         .contact-image{
@@ -614,10 +617,6 @@ ul{
             display: block;
             margin: 30px auto 10px;
         }
-        button[type="submit"]:hover{
-            color:rgb(255, 255, 255);
-            background-color: rgb(43, 145, 208);
-        }
         .footer{
             height: 90vh;
         }
@@ -672,11 +671,6 @@ ul{
         cursor: pointer;
         font-size: 1.5rem;
       }
-      .nav-link:hover {
-        color:#fff;
-        background:  rgb(43, 145, 208);
-        padding-left: 2.25rem;
-      }
       /* 280px */
       .nav-links {
         margin: 0;
@@ -690,7 +684,6 @@ ul{
         width: 100%;
         background: #24262b;
       }
-
 
     .home{
         height: 130vh;
@@ -811,7 +804,7 @@ ul{
         display: flex;
         align-items: center;
         justify-content: center;
-        background: url("images/contact3.jpg") no-repeat center center;
+        background: url("images/contact-me.jpg") no-repeat center center;
         z-index: 4;
         }
             .contact-image{
@@ -879,10 +872,6 @@ ul{
             cursor: pointer;
             display: block;
             margin: 30px auto 10px;
-        }
-        button[type="submit"]:hover{
-            color:rgb(255, 255, 255);
-            background-color: rgb(43, 145, 208);
         }
         .footer{
             height: 135vh;
