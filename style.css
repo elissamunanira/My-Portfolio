@@ -116,7 +116,6 @@ nav ul li{
     margin-bottom: 15px;
 }
 
-
 /* cv and view more buttons */
 
 .btn{
@@ -125,8 +124,6 @@ nav ul li{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-
 .cv{
     background:#140F2D;
     width: 80%;
@@ -204,14 +201,14 @@ a{
 .service-card{
     background-color: #788475;
     height:200px;
-    width: 250px;
+    width: 220px;
     border-radius: 20px;
     margin-left: 15px;
     margin-bottom: 35PX;
 }
 .service-card-image{
     border-radius: 20px 20px 0 0;
-    width:250px;
+    width:220px;
     height: 160px;
 }
 .service-text{
@@ -901,6 +898,4 @@ ul{
     padding: 10px 3%;
     font-size: small;
   }
-
-
 }
