@@ -772,7 +772,7 @@ ul{
     }
     .service-cards{
         position: static;
-        margin: 10%; 
+        margin: 10% 15%; 
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap; 
