@@ -94,7 +94,7 @@ function validateForm(){
 
 function sendEmail(){
     Email.send({
-        Host : "smtp.gmail.com",
+        Host : "smtp.elasticemail.com",
         Username : "munanira64@gmail.com",
         Password : "3282D9BA707BD905AA3A708CA26BD13AFDAE",
         To : "munanira64@gmail.com",
