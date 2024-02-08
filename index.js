@@ -95,11 +95,13 @@ function validateForm(){
 function sendEmail(){
     Email.send({
         Host : "smtp.gmail.com",
-        Username : "username",
-        To : 'munanira64@gmail.com',
-        From : "your@gmail.com",
-        Subject : "Message"
+        Username : "munanira64@gmail.com",
+        Password : "elissamn@2k",
+        To : "munanira64@gmail.com",
+        From : document.getElementById("email").value,
+        Subject : "This is the message from Portifolio",
+        Body : "Body:" + document.getElementById("username").value +"<br> Email: "+document.getElementById("email").value + "<br> message: "+document.getElementById("message").value,
     }).then(
-        message => alert(message)
+      message => alert(message)
     );
 }
