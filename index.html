@@ -24,9 +24,6 @@
 
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 
-    <!-- sending email -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-
     <title>Elissa Munanira Portifolio</title>
  </head>
     <body>
@@ -141,11 +138,14 @@
             </div>
             <div class="contact"id="contact">
                 <div class="contact-image"><img src="images/contact3.jpg" alt=""></div>
+
+                <!-- sending email -->
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
                 <form onsubmit="sendEmail(); reset(); return false;">
                     <i class="fas fa-paper-plane"></i> 
                     <div class="name">
                         <label for="name">Full Name</label>
-                        <input type="text" name="name placeholder="Enter Names" id="contact-name" onkeyup="validateName()">
+                        <input type="text" name="name" placeholder="Enter Names" id="contact-name" onkeyup="validateName()">
                         <span id="name-error"></span>
                      </div>
                      <div class="email">

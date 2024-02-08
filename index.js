@@ -95,7 +95,7 @@ function validateForm(){
 function sendEmail(){
     Email.send({
         Host : "smtp.gmail.com",
-        Username : "munanira64@gmail.com",
+        Username : "Elissa",
         Password : "elissamn@2k",
         To : "munanira64@gmail.com",
         From : document.getElementById("email").value,
