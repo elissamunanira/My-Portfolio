@@ -92,3 +92,14 @@ function validateForm(){
     }
 }
 
+function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "username",
+        To : 'munanira64@gmail.com',
+        From : "your@gmail.com",
+        Subject : "Message"
+    }).then(
+        message => alert(message)
+    );
+}
