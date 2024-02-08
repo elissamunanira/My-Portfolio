@@ -95,8 +95,8 @@ function validateForm(){
 function sendEmail(){
     Email.send({
         Host : "smtp.gmail.com",
-        Username : "Elissa",
-        Password : "elissamn@2k",
+        Username : "munanira64@gmail.com",
+        Password : "3282D9BA707BD905AA3A708CA26BD13AFDAE",
         To : "munanira64@gmail.com",
         From : document.getElementById("contact-email").value,
         Subject : "This is the message from Portifolio",
