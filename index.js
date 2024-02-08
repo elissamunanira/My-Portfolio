@@ -98,9 +98,9 @@ function sendEmail(){
         Username : "Elissa",
         Password : "elissamn@2k",
         To : "munanira64@gmail.com",
-        From : document.getElementById("email").value,
+        From : document.getElementById("contact-email").value,
         Subject : "This is the message from Portifolio",
-        Body : "Body:" + document.getElementById("username").value +"<br> Email: "+document.getElementById("email").value + "<br> message: "+document.getElementById("message").value,
+        Body : "Body:" + document.getElementById("contact-name").value +"<br> Email: "+document.getElementById("contact-email").value + "<br> message: "+document.getElementById("contact-message").value,
     }).then(
       message => alert(message)
     );
