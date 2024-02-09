@@ -95,8 +95,8 @@ function validateForm(){
 function sendEmail(){
     Email.send({
         Host : "smtp.elasticemail.com",
-        Username : "munanira64@gmail.com",
-        Password : "370F67E929FD5F54D9217862FFE49EBCB0507BEE14F421DAE1CF4FF4E9558BB3B1586826102D33B715ED6CAF0BA3FFD2",
+        Username : "munanira@gmail.com",
+        Password : "058EF99C6A4B8AA838CF619B86137256F39D",
         To : "munanira64@gmail.com",
         From : document.getElementById("contact-email").value,
         Subject : "This is the message from Portifolio",
