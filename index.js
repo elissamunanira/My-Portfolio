@@ -96,7 +96,7 @@ function sendEmail(){
     Email.send({
         Host : "smtp.gmail.com",
         Username : "munanira64@gmail.com",
-        Password : "3282D9BA707BD905AA3A708CA26BD13AFDAE",
+        Password : "b835f7c3-91f6-4938-8c82-941f61d89293",
         To : "munanira64@gmail.com",
         From : document.getElementById("contact-email").value,
         Subject : "This is the message from Portifolio",
