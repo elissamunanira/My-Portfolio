@@ -86,6 +86,7 @@ nav ul li{
     /* opacity: 50%; */
 }
 .my-image{
+    height: 400px;
     border-radius: 50%;
 }
 
@@ -160,8 +161,11 @@ a{
     text-transform: capitalize;
     align-items: center;
     text-align: center;
-    font-size:xx-large ;
+    font-size:60px ;
     padding: 40px 0px;
+}
+.skills{
+    font-size: 60px;
 }
 .about-images{
     display: flex;
