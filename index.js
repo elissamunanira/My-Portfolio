@@ -44,7 +44,7 @@ var messageError = document.getElementById('message-error');
 var submitError = document.getElementById('submit-error');
 
 function validateName(){
-    var name = document.getElementById('name').value;
+    var name = document.getElementById('contact-name').value;
     if(name.length == 0){
         nameError.innerHTML = 'Name is required';
         return false;
@@ -57,7 +57,7 @@ function validateName(){
     return true;
 }
 function validateEmail(){
-    var email = document.getElementById('email').value;
+    var email = document.getElementById('contact-email').value;
     if(email.length == 0){
         emailError.innerHTML = 'Email is required';
         return false;
@@ -71,7 +71,7 @@ function validateEmail(){
 }
 
 function validateMessage(){
-    var message = document.getElementById('message').value;
+    var message = document.getElementById('contact-message').value;
     var required  = 50;
     var left = required - message.length;
 
@@ -96,12 +96,12 @@ function sendEmail(){
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "munanira@gmail.com",
-        Password : "058EF99C6A4B8AA838CF619B86137256F39D",
-        To : "munanira64@gmail.com",
-        From : document.getElementById("email").value,
-        Subject : "This is the message from Portifolio",
-        Body : "Body:" + document.getElementById("name").value +"<br> Email: "+document.getElementById("email").value + "<br> message: "+document.getElementById("message").value,
+        Password : "456CD8E8323518E56B317CB1F4AEFCA09D0A",
+        To : 'munanira64@gmail.com',
+        From : document.getElementById("contact-email").value,
+        Subject : "New message from Portifolio",
+        Body : "Body:" + document.getElementById("contact-name").value +"<br> Email: "+document.getElementById("contact-email").value + "<br> message: "+document.getElementById("contact-message").value,
     }).then(
-      message => alert("Message sent successfully")
+      message => alert("This method of sending email is not currently supported, please use the provided email in the footer for any inquiry.")
     );
 } 
