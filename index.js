@@ -102,6 +102,6 @@ function sendEmail(){
         Subject : "New message from Portifolio",
         Body : "Body:" + document.getElementById("contact-name").value +"<br> Email: "+document.getElementById("contact-email").value + "<br> message: "+document.getElementById("contact-message").value,
     }).then(
-      message => alert("This method of sending email is not currently supported, please use the provided email in the footer for any inquiry.")
+      message => alert("This method of sending email is not currently supported, please use the provided email left-bottom  for any inquiry.")
     );
 } 
