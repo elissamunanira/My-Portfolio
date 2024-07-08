@@ -185,7 +185,7 @@ a{
 /* end of about css */
 
 .services{
-    height: 110vh;
+    height: 100vh;
     
     /* background-color: #000; */
     color: #fff;
@@ -530,7 +530,7 @@ ul{
         border-radius: 10px;
     }
     .services{
-        height: 110vh;
+        height: 130vh;
         
         /* background-color: #000; */
         color: #fff;
