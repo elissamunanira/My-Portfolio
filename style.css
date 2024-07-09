@@ -166,7 +166,6 @@ a{
 }
 .skills{
     font-size: 60px;
-    background-color: #24262b;
 }
 .about-images{
     display: flex;
@@ -744,7 +743,7 @@ ul{
     }
     .about{
         position: static;
-        height: 100Vh;
+        height: 120Vh;
         color: #fff;
         background-color: #24262b;
         font-size: large;
