@@ -166,6 +166,7 @@ a{
 }
 .skills{
     font-size: 60px;
+    background-color: #24262b;
 }
 .about-images{
     display: flex;
@@ -775,7 +776,6 @@ ul{
     }
     .myskills{
         font-size:large ;
-        background-color: #24262b;
     }
     .about-images{
         max-width: 90%;
